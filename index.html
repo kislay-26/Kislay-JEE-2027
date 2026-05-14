@@ -9,8 +9,6 @@
 
   <title>Kislay Kashyap | JEE 2027</title>
 
-  <!-- ORBITRON FONT -->
-
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 
   <style>
@@ -22,347 +20,256 @@
     }
 
     body{
-
       min-height:100vh;
-
       display:flex;
       justify-content:center;
       align-items:center;
-
       padding:25px;
-
       overflow-x:hidden;
       overflow-y:auto;
-
       font-family:Arial,sans-serif;
-
       background:url('3.jpg') no-repeat center center/cover;
-
       color:white;
     }
 
     body::before{
-
       content:"";
-
       position:fixed;
-
       top:0;
       left:0;
-
       width:100%;
       height:100%;
-
       background:rgba(0,0,0,0.58);
-
       backdrop-filter:blur(3px);
-
       z-index:-1;
     }
 
     .container{
-
       width:98%;
-
       max-width:1650px;
-
       padding:45px;
-
       border-radius:28px;
-
       background:rgba(255,255,255,0.08);
-
       border:2px solid rgba(255,140,0,0.6);
-
       backdrop-filter:blur(6px);
-
       box-shadow:0 0 40px rgba(255,120,0,0.8);
-
       animation:glow 3s infinite alternate;
-
       display:flex;
-
       justify-content:space-between;
-
       align-items:center;
-
       gap:50px;
     }
 
     @keyframes glow{
-
-      from{
-        box-shadow:0 0 20px rgba(255,120,0,0.5);
-      }
-
-      to{
-        box-shadow:0 0 55px rgba(255,120,0,1);
-      }
+      from{ box-shadow:0 0 20px rgba(255,120,0,0.5); }
+      to{ box-shadow:0 0 55px rgba(255,120,0,1); }
     }
 
     .left-side{
-
       width:32%;
-
       text-align:center;
     }
 
     .right-side{
-
       width:68%;
-
       text-align:center;
     }
 
     img{
-
       width:230px;
-
       height:230px;
-
       border-radius:50%;
-
       object-fit:cover;
-
       border:4px solid orange;
-
       box-shadow:0 0 25px orange;
-
       margin-bottom:25px;
     }
 
     h1{
-
       font-size:4rem;
-
       font-weight:900;
-
       letter-spacing:4px;
-
       margin-bottom:18px;
-
       font-family:'Orbitron', sans-serif;
-
       text-shadow:0 0 12px orange;
     }
 
     h2{
-
       font-size:2rem;
-
       font-weight:900;
-
       color:#ffcc00;
-
       margin-bottom:25px;
-
       font-family:'Orbitron', sans-serif;
-
       text-shadow:0 0 10px orange;
     }
 
     .thought{
-
-      font-size:1.45rem;
-
+      font-size:1.65rem;
       font-weight:900;
-
       line-height:2.2;
-
-      margin-bottom:40px;
-
       color:#ffffff;
+      background:rgba(20,20,20,0.55);
+      border:2px solid rgba(255,165,0,0.7);
+      border-radius:25px;
+      padding:38px;
+      box-shadow:0 0 24px rgba(255,140,0,0.38);
+      margin-bottom:35px;
+      backdrop-filter:blur(4px);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .thought::before{
+      content:"❝";
+      position:absolute;
+      top:14px;
+      left:22px;
+      font-size:4.5rem;
+      color:#ff9500;
+      text-shadow:0 0 18px orange;
+      opacity:0.95;
+    }
+
+    .thought::after{
+      content:"❞";
+      position:absolute;
+      bottom:8px;
+      right:22px;
+      font-size:4.5rem;
+      color:#ff9500;
+      text-shadow:0 0 18px orange;
+      opacity:0.95;
+    }
+
+    .thought-line{
+      padding:18px 10px;
+      border-bottom:1px solid rgba(255,140,0,0.28);
+    }
+
+    .thought-line:last-child{
+      border-bottom:none;
+    }
+
+    .highlight{
+      color:#ff9900;
+      text-shadow:0 0 13px orange;
+      font-family:'Orbitron', sans-serif;
     }
 
     #countdown-box{
-
       width:100%;
-
       max-width:900px;
-
       margin:auto;
-
       padding:35px;
-
       border-radius:25px;
-
       background:rgba(255,255,255,0.08);
-
       border:2px solid rgba(255,165,0,0.7);
-
       margin-bottom:35px;
     }
 
     #countdown-title{
-
       font-size:2rem;
-
       font-weight:900;
-
       color:#ff6600;
-
       margin-bottom:30px;
-
       font-family:'Orbitron', sans-serif;
-
       text-shadow:0 0 10px orange;
     }
 
     #countdown{
-
       display:flex;
-
       justify-content:center;
-
       align-items:center;
-
       gap:22px;
-
       flex-wrap:wrap;
     }
 
     .time-card{
-
       min-width:145px;
-
       padding:25px 18px;
-
       border-radius:20px;
-
       background:rgba(20,20,20,0.7);
-
       border:1px solid rgba(255,255,255,0.12);
-
       box-shadow:0 0 20px rgba(255,140,0,0.45);
-
       transition:0.3s;
     }
 
     .time-card:hover{
-
       transform:translateY(-5px);
-
       box-shadow:0 0 30px rgba(255,140,0,1);
     }
 
     .time-card span{
-
       display:block;
-
       font-size:2.8rem;
-
       font-weight:900;
-
       color:white;
-
       text-shadow:0 0 12px orange;
-
       font-family:'Orbitron', sans-serif;
     }
 
     .time-card small{
-
       display:block;
-
       margin-top:10px;
-
       font-size:0.8rem;
-
       font-weight:900;
-
       letter-spacing:3px;
-
       color:#ffcc00;
-
       font-family:'Orbitron', sans-serif;
     }
 
     .fire{
-
       font-size:1.8rem;
-
       font-weight:900;
-
       color:#ffcc00;
-
       line-height:1.9;
     }
 
     .spark{
-
       position:fixed;
-
       font-size:24px;
-
       opacity:0.8;
-
       animation:float 7s linear infinite;
     }
 
     @keyframes float{
-
-      from{
-        transform:translateY(100vh) rotate(0deg);
-      }
-
-      to{
-        transform:translateY(-120vh) rotate(360deg);
-      }
+      from{ transform:translateY(100vh) rotate(0deg); }
+      to{ transform:translateY(-120vh) rotate(360deg); }
     }
 
     #fullscreen-btn{
-
       position:fixed;
-
       top:20px;
       right:20px;
-
       padding:14px 22px;
-
       font-size:1rem;
-
       font-weight:900;
-
       border:none;
-
       border-radius:14px;
-
       background:rgba(255,140,0,0.9);
-
       color:white;
-
       cursor:pointer;
-
       z-index:999;
-
       box-shadow:0 0 18px orange;
-
       transition:0.3s;
-
       font-family:'Orbitron', sans-serif;
     }
 
     #fullscreen-btn:hover{
-
       transform:scale(1.08);
-
       background:#ff6600;
     }
-
-    /* MOBILE */
 
     @media(max-width:1000px){
 
       .container{
-
         flex-direction:column;
-
         text-align:center;
+        padding:28px;
       }
 
       .left-side,
       .right-side{
-
         width:100%;
       }
 
@@ -375,8 +282,14 @@
       }
 
       .thought{
-        font-size:1rem;
+        font-size:1.15rem;
         line-height:2;
+        padding:30px 20px;
+      }
+
+      .thought::before,
+      .thought::after{
+        font-size:3rem;
       }
 
       #countdown-title{
@@ -384,14 +297,11 @@
       }
 
       .time-card{
-
         min-width:110px;
-
         padding:18px 12px;
       }
 
       .time-card span{
-
         font-size:2rem;
       }
 
@@ -403,10 +313,6 @@
         width:160px;
         height:160px;
       }
-
-      .container{
-        padding:28px;
-      }
     }
 
   </style>
@@ -415,22 +321,13 @@
 
 <body>
 
-  <!-- FLOATING EMOJIS -->
-
   <div class="spark" style="left:10%; animation-duration:6s;">🔥</div>
-
   <div class="spark" style="left:25%; animation-duration:8s;">⚡</div>
-
   <div class="spark" style="left:50%; animation-duration:7s;">🚀</div>
-
   <div class="spark" style="left:75%; animation-duration:10s;">🔥</div>
-
   <div class="spark" style="left:90%; animation-duration:9s;">⚡</div>
 
-
   <div class="container">
-
-    <!-- LEFT SIDE -->
 
     <div class="left-side">
 
@@ -442,65 +339,69 @@
 
     </div>
 
-
-    <!-- RIGHT SIDE -->
-
     <div class="right-side">
 
       <div class="thought">
 
-        IT'S NOT THE END........<br><br>
+        <div class="thought-line">
+          IT'S NOT THE END........
+        </div>
 
-        RATHER IT'S JUST THE BEGINNING OF A NEW WARRIOR!!!!! 🔥<br><br>
+        <div class="thought-line">
+          RATHER IT'S JUST THE BEGINNING OF A NEW WARRIOR!!!!! 🔥
+        </div>
 
-        A WARRIOR REBUILDING HIMSELF WITH.....<br>
+        <div class="thought-line">
+          A WARRIOR REBUILDING HIMSELF WITH.....
+        </div>
 
-        FULL POTENTIAL 🔥🔥 ... FULL DISCIPLINE 🔥🔥 ... FULL HARDWORK 🔥🔥<br><br>
+        <div class="thought-line">
+          <span class="highlight">FULL POTENTIAL🔥🔥</span> ...
+          <span class="highlight">FULL DISCIPLINE🔥🔥</span> ...
+          <span class="highlight">FULL HARDWORK🔥🔥</span>
+        </div>
 
-        AND A FIRE NOBODY CAN STOP 🚀🔥🔥<br><br>
+        <div class="thought-line">
+          AND A FIRE NOBODY CAN STOP🚀🔥🔥
+        </div>
 
-        🎯 TARGET: UNDER 500 RANK 🚀<br><br>
+        <div class="thought-line">
+          ONE YEAR..... ONE MISSION.....
+        </div>
 
-        ONE YEAR..... ONE MISSION.....<br>
+        <div class="thought-line">
+          IIT THIS TIMEEEE 🔥🔥🔥
+        </div>
 
-        IIT THIS TIMEEEE 🔥🔥🔥
+        <div class="thought-line">
+          🎯 <span class="highlight">TARGET: UNDER 500 RANK</span> 🚀
+        </div>
 
       </div>
 
       <div id="countdown-box">
 
         <div id="countdown-title">
-
           BOUNCING BACK IN.......🔥🔥
-
         </div>
 
         <div id="countdown">
-
           LOADING...........
-
         </div>
 
       </div>
 
       <div class="fire">
-
-        THE COMEBACK WILL BE LOUDER THAN THE FAILURE........🔥🔥🔥
-
+        THE COMEBACK WILL BE LOUDER......🔥🔥
       </div>
 
     </div>
 
   </div>
 
-  <!-- FULLSCREEN BUTTON -->
-
   <button id="fullscreen-btn" onclick="toggleFullscreen()">
-
     FULLSCREEN 🔥
-
   </button>
-
 
   <script>
 
@@ -543,35 +444,23 @@
 
         `
         <div class="time-card">
-
           <span>${days}</span>
-
           <small>DAYS</small>
-
         </div>
 
         <div class="time-card">
-
           <span>${hours}</span>
-
           <small>HOURS</small>
-
         </div>
 
         <div class="time-card">
-
           <span>${minutes}</span>
-
           <small>MINUTES</small>
-
         </div>
 
         <div class="time-card">
-
           <span>${seconds}</span>
-
           <small>SECONDS</small>
-
         </div>
         `;
 
@@ -584,13 +473,9 @@
     function toggleFullscreen(){
 
       if(!document.fullscreenElement){
-
         document.documentElement.requestFullscreen();
-
       } else {
-
         if(document.exitFullscreen){
-
           document.exitFullscreen();
         }
       }
